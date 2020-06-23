@@ -1,10 +1,26 @@
 //import connection.js
+const connection = require("../config/connection.js");
 
 //CREATE
-    //selectAll()
-    //insertOne()
-    //updateOne()
+const orm = {
+    selectAll: function(tableInput, cb) {
+        var queryString = "SELECT * FROM " + tableInput + ";";
+        connection.query(queryString, function(err, result) {
+          if (err) {
+            throw err;
+          }
+          cb(result);
+        });
+      },
+    insertOne: function() {
 
-//export file
+    },
+    updateOne: function() {
+
+    }
+}
+    
+
+module.exports = orm;
     
 
