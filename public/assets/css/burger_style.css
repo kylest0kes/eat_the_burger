@@ -1,0 +1,39 @@
+body{
+    background-color: gray;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    padding-bottom: 0;
+}
+
+h1{
+    text-align: center;
+    margin-top: 0;
+    color: white;
+}
+
+textarea{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 100px;
+}
+
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 30px;
+}
+
+p{
+    text-align: center;
+    color: white;
+}

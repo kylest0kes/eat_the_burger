@@ -1,0 +1,19 @@
+<img src="burger.png">
+    
+<h1>Eat The Burger!</h1>
+
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> }}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> }}
+    {{/if}}
+  {{/each}}
+</ul>
