@@ -1,0 +1,24 @@
+{
+  "name": "eat_the_burger",
+  "version": "1.0.0",
+  "description": "HW13",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylest0kes/eat_the_burger.git"
+  },
+  "author": "kylest0kes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kylest0kes/eat_the_burger/issues"
+  },
+  "homepage": "https://github.com/kylest0kes/eat_the_burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.18.1"
+  }
+}
