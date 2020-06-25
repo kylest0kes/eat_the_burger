@@ -15,7 +15,7 @@
 <ol class="to-devour">
   {{#each burgers}}
     {{#unless devoured}}
-      <li>{{ burger_name }}</li>
+      <li>{{ burger_name }}<button>Devour</button></li>
     {{/unless}}
   {{/each}}
 </ol>
@@ -27,5 +27,5 @@
     <input type="text" id="burger" name="burger" placeholder="What type of Burger do you want to eat?">
   </div>
   <br>
-  <button type="submit">Add Your Burger</button>
+  <button class="submit-btn" type="submit">Add Your Burger</button>
 </form>
