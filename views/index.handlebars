@@ -1,9 +1,9 @@
-<img src="public/assets/img/burger.png">
+<img src="https://lh3.googleusercontent.com/proxy/locXkCCcrC9906NZXPx5VzZrmPCb1ZLIdJ56qZHv2e-mbT-0MFx4kzVGNnVLUnwQeewIBrCN0O2urDrmCT6u6YMjBJFV9VFYuwZH">
     
 <h1>Eat The Burger!</h1>
 
 <h2>Devoured Burgers:</h2>
-<ol>
+<ol class="devoured">
   {{#each burgers}}
     {{#if devoured}}
       <li>{{ burger_name }}</li>
@@ -12,13 +12,14 @@
 </ol>
 
 <h2>Burgers To Devour:</h2>
-<ol>
+<ol class="to-devour">
   {{#each burgers}}
     {{#unless devoured}}
       <li>{{ burger_name }}</li>
     {{/unless}}
   {{/each}}
 </ol>
+
 
 <form class="create-form">
 
