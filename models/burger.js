@@ -1,5 +1,6 @@
 //import orm into this
 const orm = require("../config/orm.js");
+
 //write code
 const burger = {
     selectAll: function(cb) {

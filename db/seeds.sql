@@ -1,5 +1,7 @@
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("Blackbean and Avocado Burger", TRUE), 
-("Veggie Burger", FALSE), 
-("Smokehouse Bacon and Portobello Burger", TRUE), 
-("Hamburger", FALSE)
+VALUES ("Blackbean and Avocado Burger", true), 
+("Smokehouse Bacon and Portobello Burger", true);
+
+INSERT INTO burgers (burger_name)
+VALUES ("Veggie Burger"), 
+("Hamburger")
