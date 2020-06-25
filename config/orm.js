@@ -28,10 +28,13 @@ const orm = {
           cb(res);
         });
       },
-    insertOne: function(table, col, val, cb) {
-        const queryString = "INSERT INTO " + table;
+      insertOne: function (table, column, values, cb) {
+        const queryString = `INSERT INTO ${table} ( ${column.toString()} ) VALUES (?,?)`;
 
-
+        connection.query(queryString, values, function (err, result) {
+            if (err) throw err;
+            cb(result);
+        });
     },
     updateOne: function(table, objColVals, condition, cb) {
         const queryString = "UPDATE " + table;

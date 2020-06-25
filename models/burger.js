@@ -8,9 +8,11 @@ const burger = {
           cb(res);
         });
     },
-    insertOne: function() {
-
-    },
+    insertOne: function(cols, vals, cb) {
+        orm.create("burgers", cols, vals, function(res) {
+          cb(res);
+        });
+      },
     updateOne: function(objColVals, condition, cb) {
         orm.updateOne("burgers", objColVals, condition, function(res) {
             cb(res);
