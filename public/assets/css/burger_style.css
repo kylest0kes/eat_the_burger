@@ -17,10 +17,19 @@ h1{
     color: white;
 }
 
+h2{
+    text-align: center;
+}
+
+hr{
+    width: 300px;
+}
+
 input{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 35px;
     width: 550px;
     height: 80px;
     font-size: x-large;
@@ -41,4 +50,13 @@ button{
 p{
     text-align: center;
     color: white;
+}
+
+ol{
+    text-align: center;
+    list-style: none;
+}
+
+li{
+    text-align: center;
 }
