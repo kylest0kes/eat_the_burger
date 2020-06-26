@@ -15,7 +15,7 @@
 <ol class="to-devour" id="to-devour">
   {{#each burgers}}
     {{#unless devoured}}
-      <li>{{ burger_name }}<button class="devour-burger" class="devour-btn" data-id="{{this.id}}">Devour</button></li>
+      <li>{{ burger_name }}<button class="devour-btn" data-id="{{this.id}}" data-nowdevoured="true">Devour</button></li>
     {{/unless}}
   {{/each}}
 </ol>

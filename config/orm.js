@@ -20,7 +20,7 @@ function objToSql(ob) {
 //CREATE
 const orm = {
     selectAll: function(table, cb) {
-        const queryString = "SELECT * FROM " + table + ";";
+        let queryString = "SELECT * FROM " + table + ";";
         connection.query(queryString, function(err, res) {
           if (err) {
             throw err;
@@ -29,7 +29,7 @@ const orm = {
         });
       },
       insertOne: function (table, column, values, cb) {
-        const queryString = `INSERT INTO ${table} ( ${column.toString()} ) VALUES (?,?)`;
+        let queryString = `INSERT INTO ${table} ( ${column.toString()} ) VALUES (?,?)`;
 
         connection.query(queryString, values, function (err, result) {
             if (err) throw err;
@@ -37,7 +37,7 @@ const orm = {
         });
     },
     updateOne: function(table, objColVals, condition, cb) {
-        const queryString = "UPDATE " + table;
+        let queryString = "UPDATE " + table;
     
         queryString += " SET ";
         queryString += objToSql(objColVals);
